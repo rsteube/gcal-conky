@@ -112,7 +112,7 @@ func printCal() []string {
 }
 
 func firstDayOfWeek(t time.Time) time.Time {
-	return t.AddDate(0, 0, -int(t.Weekday()))
+	return t.AddDate(0, 0, 1-int(t.Weekday()))
 }
 
 func lastDayOfWeek(t time.Time) time.Time {
